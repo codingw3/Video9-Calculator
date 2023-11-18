@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="resources/images/calculator-solid.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Calculator
+        <i class="fa-solid fa-calculator"></i>
+      </h1>
+
+      <div class="calculator">
+        <input type="text" id="display" />
+
+        <div class="buttons">
+          <button class="grid-column-2 operations" onclick="clearDisplay()">
+            C
+          </button>
+          <button
+            class="grid-column-2 operations"
+            onclick="appendToDisplay('.')"
+          >
+            .
+          </button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button class="operations" onclick="appendToDisplay('*')">
+            *
+          </button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button class="operations" onclick="appendToDisplay('-')">-</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button class="operations" onclick="appendToDisplay('+')">+</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button class="grid-column-2 operations" onclick="calculate()">
+            =
+          </button>
+          <button class="operations" onclick="appendToDisplay('/')">/</button>
+        </div>
+      </div>
+    </div>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>
