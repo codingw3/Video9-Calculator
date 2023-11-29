@@ -4,7 +4,7 @@
 
 ![Level](https://img.shields.io/badge/Level-Junior-green?style=for-the-badge)
 
-- [Video](https://youtube.com/@codingw3)
+- [Video](https://youtu.be/Fq1RYEEjvWs)
 - [Demo](https://codingw3.github.io/Video9-Calculator)
 
 ## Technologies
